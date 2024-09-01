@@ -1,0 +1,32 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Extraction</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">Keyword Extraction Using TextRank</h2>
+    <form class="f" action="/" method="post">
+        <div>
+            <label for="input_text">Enter Text:</label><br>
+        <textarea id="input_text" name="input_text" rows="10" cols="50" required></textarea><br><br>
+        </div>
+        
+        <div><label for="method">Choose a Method:</label><br>
+            <select id="method" name="method" required>
+                <option value="tfidf">TF-IDF</option>
+                <option value="cosine">Cosine Similarity</option>
+                <option value="jaccard">Jaccard Similarity</option>
+                <option value="cooccurrence">Co-occurrence</option>
+            </select><br><br></div>
+        
+        <button type="submit">Extract Keywords</button>
+    </form>
+    </div>
+</body>
+</html>
